@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/exalted.ico">
+  <title>Dice Roller Exalted</title>
+  <link rel="stylesheet" href="./assets/css/style.css" class="src">
+  <script src="./assets/js/exalted.js" defer></script>
+</head>
+<body>
+  <div id="mainContainer" class="flex d-column bold">
+    <header id="header">
+      <h1 id="pageTitle" class="bold">Exalted Roll10</h1>
+    </header>
+    <div id="container" class="flex d-column t-center">
+      <label for="diceRoll" id="rollInfo">Role o seu D10!</label>
+      <span id="rollSpan" class="flex t-center">
+        <button id="roll" class="bold">Rolar</button>
+        <input type="number" id="diceInput" class="bold t-center" value="1" min="1" max="30">
+        <input type="text" disabled id="result" class="bold t-center"">
+      </span>
+
+    </div>
+    <div id="logs" class="flex d-column t-center a-center">
+      <hr class>
+      <h3 class="stxt">Nota: A taxa de sucesso em Exalted é, por padrão, 7.</h3>
+      <input type="text" id="logBox" disabled>
+    </div>
+  </div>
+</body>
+</html>
