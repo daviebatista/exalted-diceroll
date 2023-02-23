@@ -13,19 +13,19 @@ function exaltedD10(){
     resultInput.style.backgroundColor = '#ff0f'
     result = 'Two Successes'
     console.log(d10 + ' | ' + result)
-    log.push(print)
+    log.unshift(print)
   }else if(d10 >= 7){
     resultInput.style.backgroundColor = '#1b0f'
     const print = 1
     result = 'Success'
     console.log(d10 + ' | ' + result)
-    log.push(print)
+    log.unshift(print)
   }else{
     resultInput.style.backgroundColor = '#ff0000'
     const print = 0
     result = 'Fail'
     console.log(d10 + ' | ' + result)
-    log.push(print)
+    log.unshift(print)
   }
   logsInput.value = log
   resultInput.value = d10
